@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Ferreteria Don Pepe</title>
+</head>
+
+<body>
+
+    <div class="row container mx-auto">
+        <h1 class="text-center">Ferreteria Don Pepe</h1>
+        <hr>
+        <div class="col-12 col-md-6">
+            <h2 class="py-2">Productos y detalles</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <!-- <td>Mark</td> -->
+                        <td>Clavos</td>
+                        <td>$50</td>
+                        <td>200</td>
+                        <td><img src="./assets/img/clavo.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <!-- <td>Mark</td> -->
+                        <td>Pernos</td>
+                        <td>$150</td>
+                        <td>150</td>
+                        <td><img src="./assets/img/perno.png" alt=""></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Tuercas</td>
+                        <td>$150</td>
+                        <td>150</td>
+                        <td><img src="./assets/img/turca.png" alt=""></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12 col-md-6" id="paymentStatus">
+            <h2 class="py-2">Estado de pago</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="nameCell">-</td>
+                        <td id="ageCell">-</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Clavos</td>
+                                        <td id="nailsQuantity">0</td>
+                                        <td id="nailsTotal">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pernos</td>
+                                        <td id="boltsQuantity">0</td>
+                                        <td id="boltsTotal">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tuercas</td>
+                                        <td id="nutsQuantity">0</td>
+                                        <td id="nutsTotal">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td id="quantity">0</td>
+                                        <td id="total">0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-12 ">
+            <h2 class="py-2">Formulario</h2>
+            <form class="border border-1 p-4" id="form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="nameHelp" name="name"
+                        autocomplete="off">
+                    <div id="nameHelp" class="form-text text-danger fw-bolder"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="age" class="form-label">Edad</label>
+                    <input type="number" class="form-control" id="age" aria-describedby="ageHelp" name="age">
+                    <div id="ageHelp" class="form-text text-danger fw-bolder"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="nails" class="form-label">Clavos</label>
+                    <input type="number" class="form-control" id="nails" aria-describedby="nailsHelp" name="nails">
+                    <div id="nailsHelp" class="form-text text-danger fw-bolder"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="bolts" class="form-label">Pernos</label>
+                    <input type="number" class="form-control" id="bolts" aria-describedby="boltsHelp" name="bolts">
+                    <div id="boltsHelp" class="form-text text-danger fw-bolder"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="nuts" class="form-label">Tuercas</label>
+                    <input type="number" class="form-control" id="nuts" aria-describedby="nutsHelp" name="nuts">
+                    <div id="nutsHelp" class="form-text text-danger fw-bolder"></div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+
+</body>
+
+</html>

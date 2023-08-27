@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+
+div[class*="text-danger"]{
+    min-height: 1.5rem;
+    min-width: 100px;
+}
+
+body{
+    background-color: #f8f9fa;
+}
+
+form, table {
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+}
+
+table{
+    text-align: center;
+}
